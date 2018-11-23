@@ -1,0 +1,78 @@
+html {
+    background-color: #02020A;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #D7DEE8;
+    margin: 50px;
+    padding: 50px;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    margin-top: 30px;
+}
+
+blockquote {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    text-align: right;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 2px;
+}
+
+#autor {
+    text-align: right;
+    margin: 50px;
+}
+
+#title {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-size: 4em;
+    margin: 0px;
+}
+
+#tribute-info {
+    background-color: #E6AF2E;
+    text-align: center;
+    margin: 20px;
+}
+
+#img-caption {
+    text-align: center;
+}
+
+#img-div {
+    display: grid;
+    justify-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+#image {
+    max-width: 100%;
+    justify-items: center;
+}
+
+.container {
+    background-color: #02020A;
+    margin: 0px;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+#galeria {
+    max-width: 100%;
+    width: 30%;
+    height: 30%;
+    border: 20px;
+    margin: 10px;
+    justify-items: center;
+    transition: all 2s;
+}
+
+#galeria:hover {
+    transform:scale(2);
+}
