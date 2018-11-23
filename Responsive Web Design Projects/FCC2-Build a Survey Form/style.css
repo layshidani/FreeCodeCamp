@@ -1,0 +1,11 @@
+html {
+    background: url(https://preview.ibb.co/gMuE9q/stanislav-kondratiev-249571-unsplash.jpg);
+}
+
+body {
+    background-color: rgba(248, 241, 241, 0.767);
+    font-family: 'Neucha', cursive;
+    margin: 100px 200px;
+    padding: 20px;
+    border-radius: 0.5%;
+}
