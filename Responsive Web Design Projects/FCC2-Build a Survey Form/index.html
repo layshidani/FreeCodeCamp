@@ -1,95 +1,119 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <title>Pesquisa</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
-    </head>
-    <body>
-        <main>
-            <header>
-                <h1 id="title">Formulário de pesquisa</h1>
-                <p>
-                    Uma pesquisa sobre a sua jornada de aprendizado na programação
-                </p>
-            </header>
-            <form id="survey-form" method="GET" action="https://freecodecamp.com">
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input id="nome" type="text" placeholder="Primeiro nome" required>
-                    <label for="sobrenome">Sobrenome:</label>
-                    <input id="sobrenome" type="text" placeholder="Sobrenome" required>
-                </div>
-                <div>
-                    <label for="idade">Idade:</label>
-                    <input id="idade" type="text" placeholder="Sua idade" required>
-                </div>
-                <div>
-                        <label>Gênero:  </label>
-                        <label for="feminino">Feminino</label>
-                        <input id="feminino" name="genero" value="fem" type="radio"/>
-                        <label for="masculino">Masculino</label>
-                        <input id="masculino" name="genero" value="masc" type="radio"/>
-                        <label for="outro">Outro</label>
-                        <input id="outro" name="genero" value="outro" type="radio"/>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" placeholder="seu@email.com" required/>
-                    </div>
-                    <hr>
-                    <p>
-                        Você se considera um programador:
-                    </p>
-                    <div>
-                        <label for="front-end">Front-end</label>
-                        <input id="front-end" type="checkbox" value="front"/>
-                        <br>
-                        <label for="back-end">Back-end</label>
-                        <input id="back-end" type="checkbox" value="back"/>
-                        <br>
-                        <label for="full-stack">Full-stack</label>
-                        <input id="full-stack" type="checkbox" value="full"/>
-                        <br>
-                        <label for="outro">Se outro, explique qual e por que: </label>
-                        <br>
-                        <textarea rows="5" cols="40">Insira o texto aqui</textarea>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="select-choice">Há quanto tempo você é programador?</label>
-                        <select name="select-choice" id="select-choice">
-                            <option value="menos-1-ano">Menos de 1 ano</option>
-                            <option value="1">1 ano</option>
-                            <option value="2">2 anos</option>
-                            <option value="3">3 anos</option>
-                            <option value="4">4 anos</option>
-                            <option value="5">5 ano</option>
-                            <option value="mais">Mais de 5 anos</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="tempo">Quanto tempo você levou para atingir um nível de conhecimento básico para se considerar um programador(a)?</label>
-                        <input id="tempo" type="number"/>
-                    </div>
-                    <hr>
-                    <label for="outro">Que conselhos e dicas você pode dar para quem está aprendendo: </label>
-                    <br>
-                    <textarea rows="5" cols="60">Insira o texto aqui</textarea>
-                    <br>
-                    <label for="outro">Quais ferramentas, livros e cursos você recomenda: </label>
-                    <br>
-                    <textarea rows="5" cols="60">Insira o texto aqui</textarea>
-            </form>
-            <hr>
-            <p>
-                Obrigada por responder nossa pesquisa!
-            </p>
-        </main>
-        <footer>
-            <p>
-                Background Photo by Stanislav Kondratiev on Unsplash
-            </p> 
-        </footer>
-    </body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pesquisa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-images-1.medium.com/fit/c/80/80/1*MotlWcSa2n6FrOx3ul89kw.png"/>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Formulário de pesquisa</h1>
+        <p id="description">
+          Uma pesquisa sobre a sua jornada de aprendizado na programação
+        </p>
+      </header>
+      <form id="survey-form" method="GET" action="https://freecodecamp.com">
+        <div class="dados">
+          <label for="name" id="name-label">Nome:</label>
+          <input id="name" type="text" placeholder="Primeiro nome" required />
+          <label for="sobrenome">Sobrenome:</label>
+          <input id="sobrenome" type="text" placeholder="Sobrenome" required />
+        </div>
+        <br>
+        <div>
+          <label for="idade">Idade:</label>
+          <input id="idade" type="text" placeholder="Sua idade" required />
+        </div>
+        <div>
+          <p class="row">Gênero:</p> 
+          <label for="feminino">Feminino</label>
+          <input id="feminino" name="genero" value="fem" type="radio" />
+          <label for="masculino">Masculino</label>
+          <input id="masculino" name="genero" value="masc" type="radio" />
+          <label for="outro">Outro</label>
+          <input id="outro" name="genero" value="outro" type="radio" />
+        </div>
+        <br>
+        <div>
+          <label for="email" id="email-label">Email:</label>
+          <input id="email" type="email" placeholder="seu@email.com" required />
+        </div>
+        <hr />
+        <p>Você se considera um programador:</p>
+        <div class="row">
+          <label for="front-end">Front-end</label>
+          <input id="front-end" type="checkbox" value="front" /> <br />
+          <label for="back-end">Back-end</label>
+          <input id="back-end" type="checkbox" value="back" /> <br />
+          <label for="full-stack">Full-stack</label>
+          <input id="full-stack" type="checkbox" value="full" /> <br />
+          <label for="outro">Se outro, explique qual e por que: </label> <br />
+          <textarea rows="5" cols="40">Insira o texto aqui</textarea>
+        </div>
+        <br />
+        <div>
+          <label for="number" id="number-label">
+            Quantas linguagens de programação você domina?</label>
+          <input
+            id="number"
+            type="number"
+            max="10"
+            min="1"
+            placeholder="1-10"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="dropdown">Há quanto tempo você é programador?</label>
+          <select name="dropdown" id="dropdown">
+            <option value="menos-1-ano">Menos de 1 ano</option>
+            <option value="1">1 ano</option>
+            <option value="2">2 anos</option>
+            <option value="3">3 anos</option>
+            <option value="4">4 anos</option>
+            <option value="5">5 ano</option>
+            <option value="mais">Mais de 5 anos</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <label for="tempo" id="tempo-label"
+            >Quanto tempo você levou para atingir um nível de conhecimento
+            básico para se considerar um programador(a)?</label>
+          <input id="tempo" type="number" />
+        </div>
+        <hr />
+        <br>
+        <div>
+          <label for="outro"
+            >Que conselhos e dicas você pode dar para quem está aprendendo:
+          </label>
+          <br />
+          <textarea rows="5" cols="60">Insira o texto aqui</textarea> <br />
+          <label for="outro"
+            >Quais ferramentas, livros e cursos você recomenda:
+          </label>
+          <br />
+          <textarea rows="5" cols="60">Insira o texto aqui</textarea>
+        </div>
+        <div>
+          <button id="submit">Salvar respostas</button>
+        </div>
+      </form>
+      <hr />
+      <p>Obrigada por responder nossa pesquisa!</p>
+    </main>
+    <footer>
+      <p>
+        Background Photo by Stanislav Kondratiev on Unsplash
+      </p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>

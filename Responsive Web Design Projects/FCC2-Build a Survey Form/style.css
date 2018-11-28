@@ -1,11 +1,65 @@
 html {
-    background: url(https://preview.ibb.co/gMuE9q/stanislav-kondratiev-249571-unsplash.jpg);
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0;
+    color: #003c3c;
+    background: url(https://preview.ibb.co/gMuE9q/stanislav-kondratiev-249571-unsplash.jpg) no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-size: cover;
 }
 
 body {
+    width: 600px;
+    height: auto;
+    color: #003c3c;
     background-color: rgba(248, 241, 241, 0.767);
-    font-family: 'Neucha', cursive;
-    margin: 100px 200px;
-    padding: 20px;
+    font-family: 'Text Me One', sans-serif;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 40px;
     border-radius: 0.5%;
+}
+
+h1 {
+    border: 2px dashed;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    padding: 10px;
+}
+
+label {
+    padding: 15px 5px 15px 0;
+    margin-top: 10px;
+}
+
+.dados {
+    display: block;
+}
+
+input[type=radio] + label {
+    display: inline;
+}
+
+input[type=checkbox] + label {
+    display: inline;
+}
+
+input, textarea, #dropdown {
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 4px;
+    border-color: #003c3c;
+}
+
+@media screen and (max-width: 600px) {
+    width: 100%;
+    margin-top: 0
 }
