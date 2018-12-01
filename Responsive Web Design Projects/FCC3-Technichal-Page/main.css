@@ -1,0 +1,93 @@
+body {
+    font-family: Arial,sans-serif;
+    line-height: 1.5;
+}
+
+#navbar {
+    font-weight: bold;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #F1F7ED;
+    color: #0E303F;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #0E303F;
+}
+
+#navbar li {
+    list-style-type: none;
+    color: #0E303F;
+}
+
+#navbar li:hover {
+    color: #F1F7ED;;
+    background-color: #0E303F;
+}
+
+#idNav {
+    text-align: center;
+    margin: 10px 10px;
+    color: #0E303F;
+    background-color: #F1F7ED;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.summary_subtitle {
+    font-weight: normal;
+    text-indent: 10px;
+    text-indent: 2em;
+}
+
+#main-doc{
+    position: absolute;
+    margin-left: 310px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 110px;
+}
+
+header {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0F2D3F;
+    margin-top: 20px;
+    margin-left: 0px;
+    border-bottom: #0E303F;
+}
+
+header.subtitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0F2D3F;
+    margin-top: 20px;
+    margin-left: 0px;
+    box-shadow: none;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    color: #f2f2f2;
+    background-color: #272822;
+    text-align: left;
+    display: flex;
+    padding: 10px;
+}
+
+blockquote {
+    text-decoration: initial;
+    border: #272822;
+}
+
+#cssSheet {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}

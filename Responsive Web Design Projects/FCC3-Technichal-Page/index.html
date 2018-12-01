@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>CSS - Notebook</title>
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<nav id="navbar">
+		<header id="idNav"><i class="fab fa-css3-alt"></i>  CSS Referência</header>
+		<ul>
+			<a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+		</ul>
+		<ul>
+			<a class="nav-link" href="#The-CSS" rel="internal"><li>The CSS</li></a>
+		</ul>
+		<ul>
+			<a class="nav-link" href="#Methods_to_add_CSS in HTML" rel="internal"><li>Methods to add CSS in HTML</li></a>
+		</ul>
+		<ul>
+			<a class="nav-link" href="#Sintax" rel="internal"><li>Sintax</li></a>
+		</ul>
+		<ul>
+			<a class="nav-link" href="#Selectors" rel="internal"><li>Selectors</li></a>
+		</ul>
+		<ul>
+			<a class="nav-link" href="#CSS_Type_Selectors" rel="internal"><li>CSS Type Selectors</li></a>
+		</ul>
+		<ul>
+			<a class="nav-link summary_subtitle" href="#HTML_element_selector" rel="internal"><li>HTML element selector</li></a>
+		</ul>
+		<ul>
+			<a class="nav-link summary_subtitle" href="#ID_and_class_selector"  rel="internal"><li>ID and class selector</li></a>
+		</ul>
+		<ul>
+			<a class="nav-link summary_subtitle" href="#Atribute_Selectors"  rel="internal"><li>Atribute Selectors</li></a>
+		</ul>
+		<ul>
+			<a class="nav-link" href="#Advancing_Tips_with_Selectors"  rel="internal"><li>Advanced Tips with Selectors</li></a>
+		</ul>
+		<ul>
+			<a class="nav-link summary_subtitle" href="#Grouping_Selectors"  rel="internal"><li>Grouping Selectors</li></a>
+		</ul>
+		
+		
+		
+		
+		<ul>
+			<a class="nav-link" href="#CSS_Comments" rel="internal"><li>CSS Comments</li></a>
+		</ul>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<article>  
+				<header>Introduction to this Notebook</header>
+				<p>
+					I like to take notes about the things I'm learning. This helps me to retain things better, in addition to creating a "search" tool to go back and remember or consult something.
+				</p>
+				<p>
+					I hope my notes can help you too.
+					<br>
+					<img id="cssSheet" src="img/css.png" alt="css">
+				</p>
+			</article>
+		</section>
+		<section class="main-section" id="The-CSS">
+			<article>
+				<header>The CSS</header>
+				<blockquote>
+					<ul>			
+						<li>CSS stands for Cascading Style Sheets</li>
+						<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+						<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+						<li>External stylesheets are stored in CSS files</li>
+					</ul>		
+					<cite><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">-W3Schools</a></cite>
+				</blockquote>
+			</article>
+		</section>
+		<section class="main-section" id="Methods_to_add_CSS_in_HTML">
+			<article>  
+				<header>Methods to add CSS in HTML</header>
+				<p>
+					There are 3 methods to add the CSS style to your HTML. In priority order:
+					<ol>
+						<li>inline</li>
+						<li>internal</li>
+						<li>external</li>
+						<li>browser default</li>
+					</ol>
+				<p>
+					This priority means that one method will be override for the other with a highest priority.
+				</p>
+				<p>
+					<bold>The external method is most recommended. The main reason is that it makes your code easier to maintain and has some performance considerations.</bold>
+				</p>
+			</article>
+			<article>
+			<header class="subtitle">Inline</header>
+			<p>
+				Included inside the HTML element as attributes. It's very hard to maintain and edit. Example:
+			</p>
+			<code>
+				&lt;!DOCTYPE html&gt;
+				<br>
+				&lt;head&gt;
+				<br>
+				&lt;meta charset=&quot;utf-8&quot; /&gt;
+				<br>
+				&lt;title&gt;Page Title&lt;/title&gt;
+				<br>
+				&lt;/head&gt;
+				<br>
+				&lt;body&gt;
+				<br>
+				&lt;h1 style=&quot;color: blue;&quot;&gt;Example&lt;/h1&gt;
+				<br>
+				&lt;/body&gt;
+				<br>
+				&lt;/html&gt;
+			</code>
+			</article>
+			<article>
+				<header class="subtitle">Internal</header>
+				<p>
+					The CSS will be included in the HTML file using &lt;style&gt; tag included in the &lt;head&gt; tag. This method will apply the CSS style to only this HTML page.
+					<\br>
+					Example:
+				</p>
+				<code>
+						&lt;!DOCTYPE html&gt;
+						<br>
+						&lt;html&gt;
+						<br>
+						&lt;head&gt;
+						<br>
+						&lt;meta charset=&quot;utf-8&quot; /&gt;
+						<br>
+						&lt;title&gt;Page Title&lt;/title&gt;
+						<br>
+						&lt;style&gt;
+						<br>
+						&ensp;h1 {
+						<br>
+						&ensp;&ensp;color: blue;
+						<br>
+						&ensp;;}
+						<br>
+						&lt;/style&gt;
+						<br>
+						&lt;/head&gt;
+						<br>
+						&lt;body&gt;
+						<br>
+						&lt;h1&gt;Example&lt;/h1&gt;
+						<br>
+						&lt;/body&gt;
+						<br>
+						&lt;/html&gt;
+				</code>
+			</article>
+			<article>
+				<header class="subtitle">External - the most recommended</header>
+				<p>
+					Separate file (.css) linked/refereced in the &lt;head&gt; tag.
+				</p>
+				<p>
+					Insert a &lt;link&gt; tag in the &lt;head&gt; tag href need to have the name of your css file:
+				</p>
+				<code>
+						&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;main.css&quot;/&gt;
+				</code>
+				<p>
+					Example:
+				</p>
+				<code>
+						&lt;!DOCTYPE html&gt;
+						<br>
+						&lt;html&gt;
+						<br>
+						&lt;head&gt;
+						<br>
+						&ensp;&lt;meta charset=&quot;utf-8&quot; /&gt;
+						<br>
+						&ensp;&lt;title&gt;Page Title&lt;/title&gt;
+						<br>
+						&ensp;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;main.css&quot;/&gt;
+						<br>
+						&lt;/head&gt;
+						<br>
+						&lt;body&gt;
+						<br>
+						&ensp;Example
+						<br>
+						&lt;/body&gt;
+						<br>
+						&lt;/html&gt;
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Sintax">
+			<article>  
+				<header>Sintax</header>
+				<p>
+					The CSS sintax look like this:
+				</p>
+				<code>
+					selector {
+					<br>
+					property: value;
+					<br>
+					property: value;
+					<br>
+					property: value;
+					<br>
+					}
+				</code>
+				<p>
+					We will see more about selectors, properties and values later.
+				</p>
+			</article>
+		</section>
+		<section>
+			<article>  
+				<header>CSS Comments</header>
+				<p>
+					The CSS comments look like this:
+				</p>
+				<code>
+					/* This is a inline comment */
+				</code>
+				<br><br>
+				<code>
+					/* This is a multiple lines comment 
+					<br>
+					&emsp;selector {
+						<br>
+					&emsp;&emsp;property: value;
+						<br>
+					&emsp;&emsp;property: value;
+						<br>
+					&emsp;&emsp;property: value;
+						<br>
+					&emsp;} */
+				</code>
+			</article>
+		</section>		
+		<section class="main-section" id="Selectors">
+			<article>
+				<header>Selectors</header>
+				<p>
+					Selectors are used to select and reference HTML elements based on their name, attribute, class, or ID, for example.
+				</p>
+				<header class="subtitle">Selectors name convention</header>
+				<p>
+					Every time you name a CSS selector, try using descriptive names that mean something about them.						
+				</p>
+				<p>
+					You can use dashes (-) or underscores (_) in the name to separate words: this-is-a-name {}
+				</p>
+			</article>
+			<article id="CSS_Type_Selectors">
+				<header>CSS Type Selectors</header>
+				<header class="subtitle" id="HTML_element_selector">HTML element selector</header>
+					<p>
+						Use the HTML element's names as a selector.
+						<br>
+						Example: h1, h2, h3, p, body.
+					</p>
+					<p>
+						CSS file will look like this:
+					</p>
+					<code>
+							h1 {
+						<br>
+						&ensp;color: green;
+						<br>
+						}
+						<br>
+						p {
+						<br>
+						&ensp;color: red;
+						<br>
+						}
+					</code>
+			</article>
+		</section>
+			<article id="ID_and_class_selector">
+				<header class="subtitle">ID and class selector</header>
+				<p>
+					You name the IDs and classes in the HTML file (with names that mean something about them) and "call" them, using # for IDs and . for classes.
+				</p>
+				<p>
+					Classes can be used many times in the same HTML, but IDs do not.
+				</p>
+				<p>
+					Think of using classes to assign the same style to related elements that must have the same style and IDs to add style to something more specific.
+				</p>
+				<p>
+					For example, all citations will have the same style on the page, so we use classes, but a submit button should have its own style that does not repeat itself.
+				</p>
+				<ul>
+					<li>The same HTML element can have both an ID and a Class</li>
+						<code>
+							&lt;h1 id=&quot;idname&quot; class=&quot;classname&quot;&gt;Text&lt;/h1&gt;
+						</code>
+					<li>You can assign more than one ID or Class to an HTML element just by separating them with a space:</li>
+						<code>
+							&lt;h1 id=&quot;idname other-idname&quot;&gt;Text&lt;/h1&gt;
+						</code>
+					<p>
+						Example: 
+						<br>HTML file will look like this:
+					</p>
+					<code>
+						&lt;!DOCTYPE html&gt;
+						<br>&lt;html&gt;
+						<br>&lt;head&gt;
+						<br>&lt;meta charset=&quot;utf-8&quot; /&gt;
+						<br>&lt;title&gt;Page Title&lt;/title&gt;
+						<br>&lt;/head&gt;
+						<br>&lt;body&gt;
+						<br>&lt;h1&gt;Examples&lt;/h1&gt;
+						<br>&lt;p&gt;
+						Text wihtout style
+						<br>&lt;/p&gt;
+						<br>&lt;p id=&quot;idname&quot;&gt;
+						Stylized text referenced by a ID
+						<br>&lt;/p&gt;
+						<br>&lt;p class=&quot;classname&quot;&gt;
+						Stylized text referenced by a class
+						<br>&lt;/p&gt;
+						<br>&lt;/body&gt;
+						<br>&lt;/html&gt;
+					</code>
+					<p>
+						CSS file will look like this:
+					</p>
+					<code>
+						<br>#idname {
+						<br>&emsp;color: green;
+						<br>}
+						<br>
+						<br>.classname {
+						<br>&emsp;color: red;
+						<br>}
+					</code>
+			</article>
+			<article id="Atribute_Selectors">
+			<header class="subtitle">Atribute Selectors</header>
+				<p>
+					Sometimes, you may need to use extra information in the selector, as an attribute.
+				</p>
+				<p>
+					The syntax has this format:
+				</p>
+				<code>
+					[attribute-name]
+					<br><br>
+					or
+					<br><br>
+					[atribute-name=value]
+				</code>
+				<p>
+					Example: On a form page, I need only the checkbox items and their labels to be aligned inline.
+				</p>
+				<code>
+					input[type=checkbox] + label {
+					<br>&emsp;display: inline;
+					<br>}
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Advancing_Tips_with_Selectors">
+			<article>
+				<header>Advanced Tips with Selectors</header>
+				<header class="subtitle">Element affected by a class</header>
+				<p>
+					Sintax (The element name + . + the class name, without space between):
+					<br>
+					<code>
+					<br>elementName.className {
+					<br>&emsp;property: value;
+					<br>}
+					</code>
+				</p>
+				<p>
+					Imagine the example below:
+				</p>
+				<p>
+					HTML:
+				</p>
+				<code>
+					&lt;h1 class=&quot;blue&quot;&gt;This TITLE will be blue&lt;/h1&gt;
+					<br><br>
+					&lt;h1&gt;This TITLE will NOT be blue&lt;/h1&gt;
+				</code>
+				<p>
+					CSS:
+				</p>
+				<code>
+					h1.blue {
+					<br>&emsp;color: blue;
+					<br>}
+				</code>
+				<p>
+					In this example, only the &lt;h1&gt; that has the blue class will have this CSS style applied.
+				</p>
+			</article>
+			<article id="Grouping_Selectors">
+				<header class="subtitle">Grouping Selectors</header>
+				<p>
+					You can apply the same style to multiple items (only if they have the same style) by grouping and separating with a comma (,).
+				</p>
+				<p>
+					Example. Assuming that h1, h2, .someClass have exactly the same style:
+				</p>
+				<code>
+					<br>h1, h2, .someClass {
+					<br>&emsp;color: blue;
+					<br>}
+				</code>
+			</article>
+			<article>
+				<header class="subtitle">Same style to multiple classes</header>
+				<p>
+					Sintax:
+				</p>
+				<code>
+					<br>.className.otherClass {
+					<br>&emsp;property: value;
+					<br>}
+				</code>
+				<p>
+					Example. Assuming that classes name, middleName and lastName have exactly the same style:
+				</p>
+				<code>
+					<br>.name.middleName.lastName {
+					<br>&emsp;color: blue;
+					<br>}
+				</code>
+			</article>
+
+		</section>
+	</main>
+	<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+</body>
+</html>
