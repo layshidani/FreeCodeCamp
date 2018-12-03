@@ -2,6 +2,7 @@
 <html>
 <head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>CSS - Notebook</title>
 		<link rel="stylesheet" href="main.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
@@ -9,52 +10,34 @@
 </head>
 <body>
 	<nav id="navbar">
-		<header id="idNav"><i class="fab fa-css3-alt"></i>  CSS Referência</header>
+		<header id="idNav"><i class="fab fa-css3-alt"></i>  CSS Reference</header>
 		<ul>
-			<a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
-		</ul>
-		<ul>
-			<a class="nav-link" href="#The-CSS" rel="internal"><li>The CSS</li></a>
-		</ul>
-		<ul>
-			<a class="nav-link" href="#Methods_to_add_CSS in HTML" rel="internal"><li>Methods to add CSS in HTML</li></a>
-		</ul>
-		<ul>
+			<a class="nav-link" href="#Introduction_to_this_Notebook" rel="internal"><li>Introduction to this Notebook</li></a>
+			<a class="nav-link" href="#The_CSS" rel="internal"><li>The CSS</li></a>
+			<a class="nav-link" href="#Methods_to_add_CSS_in_HTML" rel="internal"><li>Methods to add CSS in HTML</li></a>
+			<a class="nav-link summary_subtitle" href="#Inline"  rel="internal"><li>Inline</li></a>
+			<a class="nav-link summary_subtitle" href="#Internal"  rel="internal"><li>Internal</li></a>
+			<a class="nav-link summary_subtitle" href="#External"  rel="internal"><li>External</li></a>
 			<a class="nav-link" href="#Sintax" rel="internal"><li>Sintax</li></a>
-		</ul>
-		<ul>
-			<a class="nav-link" href="#Selectors" rel="internal"><li>Selectors</li></a>
-		</ul>
-		<ul>
-			<a class="nav-link" href="#CSS_Type_Selectors" rel="internal"><li>CSS Type Selectors</li></a>
-		</ul>
-		<ul>
-			<a class="nav-link summary_subtitle" href="#HTML_element_selector" rel="internal"><li>HTML element selector</li></a>
-		</ul>
-		<ul>
-			<a class="nav-link summary_subtitle" href="#ID_and_class_selector"  rel="internal"><li>ID and class selector</li></a>
-		</ul>
-		<ul>
-			<a class="nav-link summary_subtitle" href="#Atribute_Selectors"  rel="internal"><li>Atribute Selectors</li></a>
-		</ul>
-		<ul>
-			<a class="nav-link" href="#Advancing_Tips_with_Selectors"  rel="internal"><li>Advanced Tips with Selectors</li></a>
-		</ul>
-		<ul>
-			<a class="nav-link summary_subtitle" href="#Grouping_Selectors"  rel="internal"><li>Grouping Selectors</li></a>
-		</ul>
-		
-		
-		
-		
-		<ul>
 			<a class="nav-link" href="#CSS_Comments" rel="internal"><li>CSS Comments</li></a>
-		</ul>
+			<a class="nav-link" href="#Selectors" rel="internal"><li>Selectors</li></a>
+			<a class="nav-link summary_subtitle" href="#Selectors_name_convention" rel="internal"><li>Selectors name convention</li></a>
+			<a class="nav-link" href="#CSS_Type_Selectors" rel="internal"><li>CSS Type Selectors</li></a>
+			<a class="nav-link summary_subtitle" href="#HTML_element_selector" rel="internal"><li>HTML element selector</li></a>
+			<a class="nav-link summary_subtitle" href="#ID_and_class_selector"  rel="internal"><li>ID and class selector</li></a>
+			<a class="nav-link summary_subtitle" href="#Atribute_Selectors"  rel="internal"><li>Atribute Selectors</li></a>
+			<a class="nav-link" href="#Advanced_Tips_with_Selectors"  rel="internal"><li>Advanced Tips with Selectors</li></a>
+			<a class="nav-link summary_subtitle" href="#Element_affected_by_a_class"  rel="internal"><li>Element affected by a class</li></a>
+			<a class="nav-link summary_subtitle" href="#Grouping_Selectors"  rel="internal"><li>Grouping Selectors</li></a>
+			<a class="nav-link summary_subtitle" href="#Same_style_to_multiple_classes"  rel="internal"><li>Same style to multiple classes</li></a>
+			<a class="nav-link summary_subtitle" href="#Using_descendant_selectors"  rel="internal"><li>Using descendant selectors</li></a>		
+			<a class="nav-link" href="#Useful_Links"  rel="internal"><li>Useful Links</li></a>		
+		</ul>		
 	</nav>
 	<main id="main-doc">
-		<section class="main-section" id="Introduction">
+		<section class="main-section" id="Introduction_to_this_Notebook">
+			<header>Introduction to this Notebook</header>
 			<article>  
-				<header>Introduction to this Notebook</header>
 				<p>
 					I like to take notes about the things I'm learning. This helps me to retain things better, in addition to creating a "search" tool to go back and remember or consult something.
 				</p>
@@ -65,9 +48,9 @@
 				</p>
 			</article>
 		</section>
-		<section class="main-section" id="The-CSS">
+		<section class="main-section" id="The_CSS">
+			<header>The CSS</header>
 			<article>
-				<header>The CSS</header>
 				<blockquote>
 					<ul>			
 						<li>CSS stands for Cascading Style Sheets</li>
@@ -80,8 +63,8 @@
 			</article>
 		</section>
 		<section class="main-section" id="Methods_to_add_CSS_in_HTML">
+			<header>Methods to add CSS in HTML</header>
 			<article>  
-				<header>Methods to add CSS in HTML</header>
 				<p>
 					There are 3 methods to add the CSS style to your HTML. In priority order:
 					<ol>
@@ -97,8 +80,9 @@
 					<bold>The external method is most recommended. The main reason is that it makes your code easier to maintain and has some performance considerations.</bold>
 				</p>
 			</article>
+		<section class="main-section" id="Inline">
+			<header class="subtitle" >Inline</header>
 			<article>
-			<header class="subtitle">Inline</header>
 			<p>
 				Included inside the HTML element as attributes. It's very hard to maintain and edit. Example:
 			</p>
@@ -122,11 +106,13 @@
 				&lt;/html&gt;
 			</code>
 			</article>
+		</section>
+		<section class="main-section" id="Internal">
+			<header  class="subtitle">Internal</header>
 			<article>
-				<header class="subtitle">Internal</header>
 				<p>
 					The CSS will be included in the HTML file using &lt;style&gt; tag included in the &lt;head&gt; tag. This method will apply the CSS style to only this HTML page.
-					<\br>
+					<br>
 					Example:
 				</p>
 				<code>
@@ -161,8 +147,13 @@
 						&lt;/html&gt;
 				</code>
 			</article>
+		</section>
+		<section class="main-section" id="External">
+			<header class="subtitle">External</header>
 			<article>
-				<header class="subtitle">External - the most recommended</header>
+				<p>
+					(The most recommended)
+				</p>
 				<p>
 					Separate file (.css) linked/refereced in the &lt;head&gt; tag.
 				</p>
@@ -201,8 +192,8 @@
 			</article>
 		</section>
 		<section class="main-section" id="Sintax">
+			<header>Sintax</header>
 			<article>  
-				<header>Sintax</header>
 				<p>
 					The CSS sintax look like this:
 				</p>
@@ -222,9 +213,9 @@
 				</p>
 			</article>
 		</section>
-		<section>
+		<section class="main-section" id="CSS_Comments">
+			<header>CSS Comments</header>
 			<article>  
-				<header>CSS Comments</header>
 				<p>
 					The CSS comments look like this:
 				</p>
@@ -248,11 +239,12 @@
 			</article>
 		</section>		
 		<section class="main-section" id="Selectors">
+			<header>Selectors</header>
 			<article>
-				<header>Selectors</header>
 				<p>
 					Selectors are used to select and reference HTML elements based on their name, attribute, class, or ID, for example.
 				</p>
+			<section class="main-section" id="Selectors_name_convention">
 				<header class="subtitle">Selectors name convention</header>
 				<p>
 					Every time you name a CSS selector, try using descriptive names that mean something about them.						
@@ -261,8 +253,15 @@
 					You can use dashes (-) or underscores (_) in the name to separate words: this-is-a-name {}
 				</p>
 			</article>
-			<article id="CSS_Type_Selectors">
-				<header>CSS Type Selectors</header>
+		</section>
+		<section class="main-section" id="CSS_Type_Selectors">
+			<header>CSS Type Selectors</header>
+			<article>
+				<p>
+					See <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">w3Schools</a> CSS Selector Reference to a complete reference.
+				</p>
+		</section>
+		<section class="main-section">
 				<header class="subtitle" id="HTML_element_selector">HTML element selector</header>
 					<p>
 						Use the HTML element's names as a selector.
@@ -287,8 +286,9 @@
 					</code>
 			</article>
 		</section>
-			<article id="ID_and_class_selector">
-				<header class="subtitle">ID and class selector</header>
+		<section class="main-section" id="ID_and_class_selector">
+			<header class="subtitle">ID and class selector</header>
+			<article>
 				<p>
 					You name the IDs and classes in the HTML file (with names that mean something about them) and "call" them, using # for IDs and . for classes.
 				</p>
@@ -348,8 +348,10 @@
 						<br>}
 					</code>
 			</article>
-			<article id="Atribute_Selectors">
+		</section>
+		<section class="main-section" id="Atribute_Selectors">
 			<header class="subtitle">Atribute Selectors</header>
+			<article>
 				<p>
 					Sometimes, you may need to use extra information in the selector, as an attribute.
 				</p>
@@ -373,10 +375,12 @@
 				</code>
 			</article>
 		</section>
-		<section class="main-section" id="Advancing_Tips_with_Selectors">
+		<section class="main-section" id="Advanced_Tips_with_Selectors">
+			<header>Advanced Tips with Selectors</header>
+		</section>
+		<section class="main-section" id="Element_affected_by_a_class">
+			<header class="subtitle">Element affected by a class</header>
 			<article>
-				<header>Advanced Tips with Selectors</header>
-				<header class="subtitle">Element affected by a class</header>
 				<p>
 					Sintax (The element name + . + the class name, without space between):
 					<br>
@@ -409,8 +413,10 @@
 					In this example, only the &lt;h1&gt; that has the blue class will have this CSS style applied.
 				</p>
 			</article>
-			<article id="Grouping_Selectors">
-				<header class="subtitle">Grouping Selectors</header>
+		</section>
+		<section class="main-section" id="Grouping_Selectors">
+			<header class="subtitle">Grouping Selectors</header>
+			<article>
 				<p>
 					You can apply the same style to multiple items (only if they have the same style) by grouping and separating with a comma (,).
 				</p>
@@ -423,8 +429,10 @@
 					<br>}
 				</code>
 			</article>
+		</section>
+		<section class="main-section" id="Same_style_to_multiple_classes">
+			<header class="subtitle" >Same style to multiple classes</header>
 			<article>
-				<header class="subtitle">Same style to multiple classes</header>
 				<p>
 					Sintax:
 				</p>
@@ -434,7 +442,7 @@
 					<br>}
 				</code>
 				<p>
-					Example. Assuming that classes name, middleName and lastName have exactly the same style:
+					Example: Assuming that classes name, middleName and lastName have exactly the same style:
 				</p>
 				<code>
 					<br>.name.middleName.lastName {
@@ -442,9 +450,128 @@
 					<br>}
 				</code>
 			</article>
-
+		</section>
+		<section class="main-section" id="Using_descendant_selectors">
+			<header class="subtitle">Using descendant selectors</header>
+			<article>
+				<p>
+					Here is an example of nested descendant selectors:
+				</p>
+				<code>
+					&lt;div class=&quot;ancestor&gt;
+					<br>
+					&ensp;&lt;div class=&quot;parent&gt;
+					<br>
+					&emsp;&lt;div class=&quot;child&quot;&gt;&lt;/div&gt;
+					<br>
+					&emsp;&lt;div class=&quot;descendant&quot;&gt;&lt;/div&gt;
+					<br>
+					&ensp;&lt;/div&gt;
+					<br>
+					&lt;/div&gt;
+				</code>
+				<p>
+					CSS combinators:
+					<ul>
+						<li>Descendant selector (space)</li>
+						<li>Child selector (>)</li>
+						<li>Adjacent sibling selector</li>
+						<li>General sibling selector (~)</li>
+					</ul>
+				</p>
+				<p>
+					Here is a table summarized by <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">W3Schools</a>:
+				</p>
+				<table>
+					<tr>
+						<th>Selector</th>
+						<th>Example</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>element element</td>
+						<td>div p</td>
+						<td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+					</tr>
+					<tr>
+						<td>element>element</td>
+						<td>div > p</td>
+						<td>Selects all &lt;p&gt; elements where the parent is a &lt;div&gt; element</td>
+					</tr>
+					<tr>
+						<td>element+element</td>
+						<td>div + p</td>
+						<td>Selects all &lt;p&gt; elements that are placed immediately after &lt;div&gt; elements</td>
+					</tr>
+					<tr>
+						<td>element1~element2</td>
+						<td>p ~ ul</td>
+						<td>Selects every &lt;ul&gt; element that are preceded by a &lt;p&gt; element</td>
+					</tr>
+				</table>
+				<p>
+					Use a combination of:
+					<ul>
+						<li>parent child</li>
+						<li>ancestor descendant</li>
+					</ul>
+				</p>
+				<p>
+					Using this example, we can see below how to use a combination of descending selectors (<bold>separated by a space</bold>). 
+				</p>
+				<p>
+					In this case, only the &lt;li&gt; items that are nested in the #navbar ID will have this CSS style applied:
+				</p>
+				<code>
+					#navbar li {
+						<br>
+						&emsp;list-style-type: none;
+						<br>
+						&emsp;color: #0E303F;
+						<br>
+					}	
+				</code>
+		</section>
+		<hr>
+		<section class="main-section" id="Useful_Links">
+			<header>Useful Links</header>
+			<article>
+				<p class="subtitle">
+					Reference
+				</p>
+				<ul>
+					<li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS Tutorial</a> by W3Schools - a huge reference with examples</li>
+					<li><a href="https://css-tricks.com/almanac/" target="_blank">CSS Tricks</a> Almanac</li>
+					<li><a href="https://robots.thoughtbot.com/transitions-and-transforms" target="_blank">Thoughtbot</a> - Transitions and transforms with examples</li>
+				</ul>
+				<p class="subtitle">
+					Tools
+				</p>
+				<ul>
+					<li><a href="http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank">Paletton</a> - Color palette</li>
+					<li><a href="https://coolors.co/" target="_blank">Coolors</a> - Color schemes generator</li>
+					<li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+					<li><a href="https://cssminifier.com/" target="_blank">CSS minifier</a> - Free Online CSS Minifier/Compressor</li>
+					<li><a href="https://caniuse.com/" target="_blank">Can I use?</a> - provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers</li>
+					<li><a href="https://caniuse.com/" target="_blank">Can I use?</a> - provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers</li>
+					<li><a href="http://shouldiprefix.com/" target="_blank">Should I prefix?</a> -  simply show what prefixes are needed for a newer CSS property</li>
+					<li><a href="https://specificity.keegan.st/" target="_blank">Specificity Calculator</a> -  A visual way to understand CSS specificity</li>
+					<li><a href="http://bennettfeely.com/clippy/" target="_blank">CSS clip-path maker</a></li>
+					<li><a href="https://daneden.github.io/animate.css/" target="_blank">Animate CSS</a> - See the CSS animations</li>
+					<li><a href="https://pesticide.io/" target="_blank">Pesticide</a> - A chrome plugin for quickly debugging css layout issues by toggling different colored outlines on every element</li>
+				</ul>
+				<p class="subtitle">
+					Games to learn CSS
+				</p>
+				<ul>
+					<li><a href="https://flexboxfroggy.com/" target="_blank">FLEXBOX FROGGY</a> - Learn CSS flexbox in a game where you help Froggy and friends by writing CSS code!</li>
+					<li><a href="http://www.flexboxdefense.com/" target="_blank">Flexbox Defense
+					</a> - Learn CSS flexbox.</li>
+					<li><a href="https://cssgridgarden.com/" target="_blank">GRID GARDEN</a> - Learn CSS GRID in a game where you write CSS code to grow your carrot garden!</li>
+					<li><a href="http://flukeout.github.io/" target="_blank">CSS Diner</a> - Learn about CSS selectors.</li>
+				</ul>
 		</section>
 	</main>
-	<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
