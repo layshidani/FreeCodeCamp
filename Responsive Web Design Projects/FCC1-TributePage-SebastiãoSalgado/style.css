@@ -32,6 +32,8 @@ cite {
 #title {
     font-family: 'Anton', sans-serif;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 4em;
     margin: 0px;
 }
@@ -62,26 +64,27 @@ cite {
 }
 
 .container {
-    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     background-color: #02020A;
-    margin: 0px;
-    padding: 30px;
+    margin: 0;
+    padding: 20px;
     border-radius: 4px;
 }
 
 #galeria {
-    width: 30%;
-    height: 30%;
-    border: 20px;
-    margin: 10px;
-    justify-items: center;
+    padding: 20px;
     transition: all 2s;
+    max-width: 100%;
+    height: auto;
 }
 
 #galeria:hover {
-    transform:scale(2);
+    transform:scale(1.10);
 }
 
-@media all (max-width: 600px) {
-    max-width: 100%;
+@media all (max-width: 400px) {
+    width: 50%;
 }
