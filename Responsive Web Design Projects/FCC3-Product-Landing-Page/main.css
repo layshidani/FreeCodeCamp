@@ -5,45 +5,64 @@
 }
 
 body {
-    background-color: #eee;
+    background-color: #F4FFFD;
     font-family: 'Lato', sans-serif;
 }
 
 header {
     font-family: 'Black Ops One', cursive;
-    color: white;
-    height: 10vh;
+    color: #F4FFFD;
+    height: 40px;
     display: flex;
-    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #012551;
+}
+
+header img {
+    height: 20px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#nav-bar {
+    flex-grow: 10;
+}
+
+#nav-bar ul {
+    display: flex;
     justify-content: flex-end;
 }
 
-li {
-    display: inline-block;
-    padding: 20px;
+#nav-bar li {
+    margin: 0px 20px;
+    list-style: none;
 }
 
-a {
+#nav-bar a {
     text-decoration: none;
-    color: aliceblue;
+    color: #F4FFFD;
 }
 
 #Home {
     height: 60vh;
+    /*background: url(https://drive.google.com/file/d/16AEU4JUB66APDSxTS_LNgEoplTbxtxqa/view?usp=sharing) no-repeat center;*/
     background: url(img/1.jpg) no-repeat center;
     background-size: cover;
 }
 
 #logo{
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    align-items: center;
+    padding-top: 40px;
 }
 
 #avaz {
     font-family: 'Black Ops One', cursive;
     font-size: 6em;
+    color: #012551;
 }
 
 #subtitle {
@@ -52,25 +71,61 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #012551;
 }
 
-.grid {
+.container {
+    margin: 50px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    flex-wrap: wrap;
 }
 
-.icon {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    height: 125px;
-    width: 20vw;
+#Our_Services p {
+    text-align: center;
+    color: #012551;
+}
 
-    @media (max-width: 550px) {
-      display: none;
-    }
+#video {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#Contact_Us {
+    background-color: #F9DC5C;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 1.5em;
+    color: #012551;
+}
+
+#Contact_Us h2 {
+    padding: 30px;
+    color: #012551;
+}
+
+#form {
+    padding: 30px;
+}
+
+span {
+    font-weight: bold;
+}
+
+button {
+    border-radius: 25%;
+    background-color: #012551;
+    border-color: #012551;
+    color: #F4FFFD;
+    margin: 30px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #F9DC5C;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: end;
 }

@@ -13,6 +13,12 @@ This is a repo with my FreeCodeCamp projects.
 - [Survey Form](https://codepen.io/hlays/full/oQdYEE)
     ![Survey Form](img/r1d7.jpg)
 
+- [Landing Page](https://codepen.io/hlays/full/LXKGYq)
+    ![Landing Page](https://github.com/hlays/100-days-of-code/raw/master/images/r1d17.jpg)
+
+- [Technical Documentation Page](https://codepen.io/hlays/full/qQQePp)
+    ![Technical Documentation Page](https://github.com/hlays/100-days-of-code/raw/master/images/r1d15.jpg)
+
 ---
 
 ## [FreeCodeCamp](https://www.freecodecamp.org/)
@@ -22,7 +28,7 @@ This is a repo with my FreeCodeCamp projects.
 [- *Wikipedia*](https://en.wikipedia.org/wiki/FreeCodeCamp)
 
 ---
-- I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).
+- I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code/blob/master/r1-log.md).
 
 - [My Learning Nootebooks](https://github.com/hlays/mylearningnotebooks)
 
