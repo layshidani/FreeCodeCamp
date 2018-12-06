@@ -1,3 +1,5 @@
+/* general
+--------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* header 
+--------------------------------------------*/
 header {
     font-family: 'Black Ops One', cursive;
     color: #F4FFFD;
@@ -26,25 +30,35 @@ header img {
     margin-right: 10px;
 }
 
+/* navbar 
+--------------------------------------------*/
 #nav-bar {
-    flex-grow: 10;
+    overflow: hidden;
+    position: fixed;
+    background-color: #012551;
+    top: 0;
+    width: 100%;
 }
 
 #nav-bar ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#nav-bar li {
-    margin: 0px 20px;
     list-style: none;
 }
 
 #nav-bar a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    float: left;
     color: #F4FFFD;
 }
 
+#nav-bar a:hover {
+    color: #F4FFFD;
+}
+
+/* home
+--------------------------------------------*/
 #Home {
     height: 60vh;
     /*background: url(https://drive.google.com/file/d/16AEU4JUB66APDSxTS_LNgEoplTbxtxqa/view?usp=sharing) no-repeat center;*/
@@ -74,16 +88,20 @@ header img {
     color: #012551;
 }
 
+/* Our services
+--------------------------------------------*/
 .container {
     margin: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 #Our_Services p {
     text-align: center;
     color: #012551;
+    padding: 30px;
+    line-height: 2em;
 }
 
 #video {
@@ -92,6 +110,8 @@ header img {
     margin: 50px;
 }
 
+/* Form Contact Us
+--------------------------------------------*/
 #Contact_Us {
     background-color: #F9DC5C;
     display: flex;
@@ -123,6 +143,8 @@ button {
     padding: 10px;
 }
 
+/* footer
+--------------------------------------------*/
 footer {
     background-color: #F9DC5C;
     font-size: 0.8em;
