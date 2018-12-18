@@ -1,0 +1,111 @@
+* {
+  font-family: 'Dancing Script', cursive;
+  background-color: #F4E8AD;
+  font-size: 26px;
+}
+
+/* Navbar
+---------------------*/
+header {
+  background-color: #00652f;
+  position: fixed;
+  padding: 20px;
+}
+
+#header-img {
+  margin-left: 20px;
+  background-color: #00652f;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#nav-bar {
+  margin-top: 0;
+}
+
+#nav-bar ul {
+  list-style: none;
+}
+
+#nav-bar a {
+  color: #F4E8AD;
+  background-color: #00652f;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  margin-left: 0;
+}
+
+#nav-bar a:hover {
+  background-color: #BC4B51;
+  padding: 2px;
+}
+
+/* Main
+--------------------------------------*/
+main {
+  margin-left: 300px;
+  width: 500px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+#la_pizza {
+  width: 500px;
+  padding-bottom: 10px;
+  text-align: center;
+  box-shadow: 0px 3px #BC4B51;
+}
+
+#video {
+  box-shadow: 5px 5px #BC4B51;
+  width: 545px;
+  height: 300px;
+}
+
+#Prices {
+  border: 3px solid #F4D05A;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  box-shadow: 5px 5px #A58A00;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contact us 
+--------------------------------------*/
+#Contact_us {
+  margin-top: 50px;
+  padding: 20px;
+  border: 3px solid #00652f;
+  box-shadow: 5px 5px #00652f;
+}
+
+#submit {
+  color: #F4E8AD;
+  background-color: #BC4B51;
+  border-radius: 5px;
+}
+
+/* Responsive 
+--------------------------------------*/
+@media (max-width: 600px) {
+  main {
+    margin-left: 200px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  #video {
+    max-width: 100%;
+    max-height: auto;
+  }
+}
