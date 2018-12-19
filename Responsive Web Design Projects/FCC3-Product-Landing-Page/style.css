@@ -6,48 +6,49 @@
 
 /* Navbar
 ---------------------*/
-header {
-  background-color: #00652f;
-  position: fixed;
-  padding: 20px;
-}
-
 #header-img {
-  margin-left: 20px;
+  padding: 10px;
   background-color: #00652f;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 #nav-bar {
-  margin-top: 0;
+  top: 0;
 }
 
 #nav-bar ul {
   list-style: none;
-}
-
-#nav-bar a {
-  color: #F4E8AD;
   background-color: #00652f;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  float: left;
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#nav-bar a:hover {
+li a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #00652f;
+  color: #F4E8AD;
+}
+
+li a:hover {
   background-color: #BC4B51;
-  padding: 2px;
 }
 
 /* Main
 --------------------------------------*/
 main {
-  margin-left: 300px;
   width: 500px;
   text-align: center;
+  margin: 120px auto 20px auto;
 }
 
 h1 {
@@ -70,8 +71,7 @@ h1 {
 #Prices {
   border: 3px solid #F4D05A;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
   width: 500px;
   box-shadow: 5px 5px #A58A00;
   display: flex;
@@ -81,10 +81,11 @@ h1 {
 /* Contact us 
 --------------------------------------*/
 #Contact_us {
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 20px;
   border: 3px solid #00652f;
   box-shadow: 5px 5px #00652f;
+  display: block;
 }
 
 #submit {
@@ -96,16 +97,59 @@ h1 {
 /* Responsive 
 --------------------------------------*/
 @media (max-width: 600px) {
-  main {
-    margin-left: 200px;
+  * {
+    font-size: 16px;
   }
 
   h1 {
-    font-size: 1.2em;
+    font-size: 22px;
+  }
+
+  #Prices {
+    width: 500px;
   }
 
   #video {
     max-width: 100%;
     max-height: auto;
+  }
+}
+
+@media (max-width: 415px) {
+  * {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    width: 250px;
+  }
+
+  #Prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+  }
+
+  #video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+  }
+
+  #Contact_us {
+    width: 250px;
   }
 }
