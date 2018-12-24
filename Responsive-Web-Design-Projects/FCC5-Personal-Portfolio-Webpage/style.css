@@ -1,0 +1,80 @@
+/*font-family: 'Roboto Slab', serif;
+font-family: 'ZCOOL QingKe HuangYou', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Press Start 2P', cursive;*/
+* {
+    font-family: 'Baloo Bhaijaan', cursive;
+    color: #FFFBF9;
+    background-color: #000214;
+}
+
+#navbar {
+    top: 0;
+    font-size: 18px;
+}
+
+#navbar ul {
+    list-style: none;
+    background-color: #000214;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #FFF4EF;
+}
+
+li a:hover {
+    background-color: #A55169;
+}
+
+#welcome-section {
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0;
+    color: #f2f2ff;
+    background: url(img/anas-alshanti-169265-unsplash.jpg) no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-size: cover;
+}
+
+#presentation {
+    font-size: 500%;
+    background-color: none;
+}
+
+.bground {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-sample {
+    width: 500px;
+    height: auto;
+}
+
+
