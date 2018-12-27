@@ -4,6 +4,11 @@
     background-color: #141516;
 }
 
+header {
+    position: fixed;
+    top: 0;
+}
+
 #navbar {
     top: 0;
     font-size: 20px;
@@ -45,12 +50,12 @@ li a:hover {
 }
 
 #welcome-section {
+    color: #f2f2ff;
     font-size: 2vw;
     text-align: center;
-    width: 100%;
+    display: block;
     height: 100vh;
-    padding: 10px 0;
-    color: #f2f2ff;
+    /* padding-top: 20px; */
 }
 
 #hi {
@@ -104,64 +109,62 @@ a img:hover {
 }
 
 .js-tag {
-    color: #F7F7F7;
-    background-color: #F19832;
-    padding: 5px;
-    border-radius: 4px;
+  color: #F7F7F7;
+  background-color: #F19832;
+  padding: 5px;
+  border-radius: 4px;
 }
 
 #contact {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
-.profile-link i {
+#profile-link i {
 	font-size: 3vw;
-    color: #FFFBF9;
-    padding: 20px;
-    align-self: center;
+  color: #FFFBF9;
+  padding: 20px;
+  align-self: center;
 }
 
-.profile-link i:hover {
+#profile-link i:hover {
 	color: #56756D;
 	transform: scale(1.1);
     transition: 0.5s;
 }
 
 @media (max-width: 400px) {
-    #navbar {
-        font-size: 10px;
-    }
+  #navbar {
+      font-size: 10px;
+  }
 
-    .main-h1 {
-        padding: 20px;
-    }
+  .main-h1 {
+      padding: 20px;
+  }
 
-    .project-sample {
-        width: 250px;
-        height: auto;
-    }
+  .project-sample {
+      width: 250px;
+      height: auto;
+  }
 }
 
 @media (max-width: 800px) {
-    #grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 5px;
-        justify-items: center;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 20px;
-    }
+  #grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 5px;
+      justify-items: center;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 20px;
+  }
 
-    .project-sample {
-        width: 350px;
-        height: auto;
-    }
+  .project-sample {
+      width: 350px;
+      height: auto;
+  }
 
-    .main-h1 {
-        padding: 20px;
-    }
+  .main-h1 {
+      padding: 20px;
+  }
 }
-
-
