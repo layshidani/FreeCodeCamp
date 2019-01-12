@@ -4,20 +4,24 @@
 
 This is a repo with my FreeCodeCamp projects.
 
-## Also disponible on [codepen.io](https://codepen.io/)
+## Also disponible on [repl.it](https://repl.it/@hlays)
 
-### Responsive Web Design Projects:
-- [Tribute Page](https://codepen.io/hlays/full/OaxNvj)
-    ![Tribute Page](img/r1d6.jpg)
+##  >> Responsive Web Design Projects <<
+**Status:** ***Complete***
+- [Tribute Page](https://FCC1-TributePage-SebastiaoSalgado--hlays.repl.co)
+    ![Tribute Page](img/1.jpg)
 
-- [Survey Form](https://codepen.io/hlays/full/oQdYEE)
-    ![Survey Form](img/r1d7.jpg)
+- [Survey Form](https://FCC2-Build-a-Survey-Form--hlays.repl.co)
+    ![Survey Form](img/2.jpg)
 
-- [Landing Page](https://codepen.io/hlays/full/LXKGYq)
-    ![Landing Page](https://github.com/hlays/100-days-of-code/raw/master/images/r1d17.jpg)
+- [Landing Page](https://FCC3-Product-Landing-Page--hlays.repl.co)
+    ![Landing Page](img/3.jpg)
 
-- [Technical Documentation Page](https://codepen.io/hlays/full/qQQePp)
-    ![Technical Documentation Page](https://github.com/hlays/100-days-of-code/raw/master/images/r1d15.jpg)
+- [Technical Documentation Page](https://fcc4-technichal-page--hlays.repl.co/)
+    ![Technical Documentation Page](img/4.jpg)
+
+- [Personal Portifolio](https://fcc-personal-portifolio--hlays.repl.co/)
+    ![Technical Documentation Page](img/5.jpg)
 
 ---
 
