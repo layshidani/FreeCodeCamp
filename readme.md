@@ -8,19 +8,19 @@ This is a repo with my FreeCodeCamp projects.
 
 ##  >> Responsive Web Design Projects <<
 **Status:** ***Complete***
-- [Tribute Page](https://FCC1-TributePage-SebastiaoSalgado--hlays.repl.co)
+- [Tribute Page](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado/)
     ![Tribute Page](img/1.jpg)
 
-- [Survey Form](https://FCC2-Build-a-Survey-Form--hlays.repl.co)
+- [Survey Form](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form/)
     ![Survey Form](img/2.jpg)
 
-- [Landing Page](https://FCC3-Product-Landing-Page--hlays.repl.co)
+- [Landing Page](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page/)
     ![Landing Page](img/3.jpg)
 
-- [Technical Documentation Page](https://fcc4-technichal-page--hlays.repl.co/)
+- [Technical Documentation Page](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page/)
     ![Technical Documentation Page](img/4.jpg)
 
-- [Personal Portifolio](https://fcc-personal-portifolio--hlays.repl.co/)
+- [Personal Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)
     ![Technical Documentation Page](img/5.jpg)
 
 ---
