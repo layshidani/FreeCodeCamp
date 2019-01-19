@@ -1,0 +1,8 @@
+**/Desktop.ini
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+
+/build/*
+/tmp/*
+/docs/*
