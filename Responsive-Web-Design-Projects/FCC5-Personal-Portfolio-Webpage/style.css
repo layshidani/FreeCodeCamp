@@ -7,6 +7,8 @@
 html {
     background: url(img/david-becker-779762-unsplash.jpg);
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Navbar */
@@ -65,8 +67,9 @@ li a:hover {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 30px;
-    margin-top: 15rem;
+    padding-top: 20%;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 #welcome-section p {
@@ -86,6 +89,10 @@ li a:hover {
 }
 
 /* Projects Section */
+#projects {
+    padding-top: 5%;
+}
+
 #grid {
     margin-top: 5px;
     display: grid;
@@ -143,7 +150,8 @@ h2 {
 
 /* Contact Section */
 #contact {
-    margin-top: 50px;
+    margin-top: 30px;
+    padding-top: 20%;
     text-align: center;
 }
 
@@ -155,42 +163,28 @@ h2 {
 }
 
 #profile-link i:hover {
-	color: #56756D;
+	color: #033636;
 	transform: scale(1.1);
     transition: 0.5s;
 }
 
 /* Responsiveness */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     #navbar {
-        font-size: 10px;
+        font-size: 16px;
     }
 
-    .main-h1 {
-        margin-top: 20px;
-        padding: 20px;
-        font-size: 35px;
+    #welcome-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        justify-items: right;
+        padding-top: 10%;
     }
 
-    p {
-        font-size: 15px;
-    }
-
-    .project-sample {
-        width: 250px;
-        height: auto;
-    }
-
-    #profile-link i {
-        font-size: 8vw;
-    }
-}
-
-@media (max-width: 800px) {
     #grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
         grid-gap: 5px;
         justify-items: center;
         align-items: center;
@@ -210,7 +204,7 @@ h2 {
     .main-h1 {
         margin-top: 20px;
         padding: 20px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     #profile-link i {
