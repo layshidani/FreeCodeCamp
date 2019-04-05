@@ -59,7 +59,6 @@ li a:hover {
 }
 
 /* welcome section */
-
 #welcome-section {
     color: #f2f2ff;
     font-size: 2vw;
@@ -169,7 +168,7 @@ h2 {
 }
 
 /* Responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     #navbar {
         font-size: 16px;
     }
@@ -179,7 +178,9 @@ h2 {
         grid-template-columns: 1fr;
         grid-gap: 5px;
         justify-items: right;
-        padding-top: 10%;
+        padding: 10%;
+        margin-right: 30px;
+        margin-left: 30px;
     }
 
     #grid {

@@ -32,8 +32,5 @@ This is a repo with my FreeCodeCamp projects.
 [- *Wikipedia*](https://en.wikipedia.org/wiki/FreeCodeCamp)
 
 ---
+
 - I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code/blob/master/r1-log.md).
-
-- [My Learning Nootebooks](https://github.com/hlays/mylearningnotebooks)
-
-- [My Leaning Track](https://github.com/hlays/learning-track)
