@@ -12,17 +12,18 @@ html {
 }
 
 /* Navbar */
+
 header {
     position: fixed;
     top: 0;
 }
 
-#navbar {
+.navbar {
     top: 0;
     font-size: 20px;
 }
 
-#navbar ul {
+.navbar ul {
     list-style: none;
     background-color: #141516;
     margin: 0;
@@ -53,13 +54,15 @@ li a:hover {
 }
 
 /* Main titles */
+
 .main-h1 {
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
 /* welcome section */
-#welcome-section {
+
+.welcome-section {
     color: #f2f2ff;
     font-size: 2vw;
     height: 100vh;
@@ -71,7 +74,7 @@ li a:hover {
     padding-left: 25px;
 }
 
-#welcome-section p {
+.welcome-section p {
     color: #141516;
     background-color: #E4FFCA;
     width: 350px;
@@ -82,17 +85,18 @@ li a:hover {
     text-align: left;
 }
 
-#welcome-section i {
+.welcome-section i {
     color: #141516;
     background-color: #E4FFCA;
 }
 
 /* Projects Section */
-#projects {
+
+.projects {
     padding-top: 5%;
 }
 
-#grid {
+.grid {
     margin-top: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,11 +109,11 @@ li a:hover {
 
 a img:hover {
     transform: scale(1.05);
-	transition: 0.5s;
+    transition: 0.5s;
 }
 
 .project-sample {
-    width: 500px;
+    width: 80vw;
     height: auto;
     border-radius: 6px;
 }
@@ -119,6 +123,7 @@ h2 {
 }
 
 /* Tags style */
+
 .html-tag {
     color: #F7F7F7;
     background-color: #DC4D25;
@@ -129,7 +134,7 @@ h2 {
 .css-tag {
     color: #F7F7F7;
     background-color: #0079C0;
-    padding: 5px;    
+    padding: 5px;
     border-radius: 4px;
 }
 
@@ -148,42 +153,47 @@ h2 {
 }
 
 /* Contact Section */
-#contact {
+
+.contact {
     margin-top: 30px;
     padding-top: 20%;
     text-align: center;
 }
 
-#profile-link i {
-	font-size: 3vw;
+.profile-link i {
+    font-size: 3vw;
     color: #FFFBF9;
     padding: 20px;
     align-self: center;
 }
 
-#profile-link i:hover {
-	color: #033636;
-	transform: scale(1.1);
+.profile-link i:hover {
+    color: #033636;
+    transform: scale(1.1);
     transition: 0.5s;
 }
 
 /* Responsiveness */
+
 @media (max-width: 800px) {
-    #navbar {
+    .navbar {
         font-size: 16px;
     }
-
-    #welcome-section {
+    .welcome-section {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 5px;
         justify-items: right;
         padding: 10%;
+        width: 100vw;
         margin-right: 30px;
         margin-left: 30px;
     }
+    .welcome-section p {
+        width: 80vw;
+    }
 
-    #grid {
+    .grid {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 5px;
@@ -197,18 +207,13 @@ h2 {
         font-size: 15px;
     }
 
-    .project-sample {
-        width: 350px;
-        height: auto;
-    }
-
     .main-h1 {
         margin-top: 20px;
         padding: 20px;
         font-size: 30px;
     }
 
-    #profile-link i {
+    .profile-link i {
         font-size: 8vw;
     }
 }
