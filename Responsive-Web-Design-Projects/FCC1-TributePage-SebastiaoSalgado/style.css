@@ -1,91 +1,96 @@
 html {
-    background-color: #02020A;
-    font-family: 'Roboto', sans-serif;
+  background-color: #02020A;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #D7DEE8;
-    margin: 50px;
-    padding: 50px;
-    line-height: 1.5;
+  background-color: #D7DEE8;
+  margin: 50px;
+  padding: 50px;
+  line-height: 1.5;
 }
 
 h1, h2 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 blockquote {
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    text-align: right;
-    margin: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    border-radius: 2px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  text-align: right;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border-radius: 2px;
 }
 
 cite {
-    text-align: right;
-    font-style: italic;
+  text-align: right;
+  font-style: italic;
 }
 
-#title {
-    font-family: 'Anton', sans-serif;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 4em;
-    margin: 0px;
+.title {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4em;
+  margin: 0px;
 }
 
-#tribute-info {
-    background-color: #E6AF2E;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.tribute-info {
+  background-color: #E6AF2E;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-#img-caption {
-    text-align: center;
+.img-caption {
+  text-align: center;
 }
 
-#img-div {
-    display: grid;
-    justify-items: center;
-    max-width: 100%;
-    height: auto;
+.img-div {
+  display: grid;
+  justify-items: center;
+  max-width: 100%;
+  height: auto;
 }
 
-#image {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+.image {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    background-color: #02020A;
-    margin: 0;
-    padding: 20px;
-    border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: #02020A;
+  margin: 0;
+  padding: 20px;
+  border-radius: 4px;
 }
 
-#galeria {
-    padding: 20px;
-    transition: all 2s;
-    max-width: 100%;
-    height: auto;
+.gallery {
+  padding: 20px;
+  transition: all 2s;
+  max-width: 100%;
+  height: auto;
 }
 
-#galeria:hover {
-    transform:scale(1.10);
+.gallery:hover {
+  transform: scale(1.10);
 }
 
 @media all (max-width: 400px) {
-    width: 50%;
+  .img-div {
+    display: grid;
+    justify-items: center;
+    max-width: 80%;
+    height: auto;
+  }
 }
